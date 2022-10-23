@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400;700&display=swap');
+
+/* colors */
+:root {
+    --dark-grey: #333;
+    --white: #fff;
+    --mostarda: #efb43a;
+    --black: #000;
+    --grey: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--grey);
+    font-family: 'Noticia Text', serif;
+}
+
+a { text-decoration: none; }
+button { border: none; }

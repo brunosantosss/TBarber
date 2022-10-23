@@ -1,0 +1,183 @@
+main {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.initial_container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../public/client_barber.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    line-height: 5em;
+}
+
+.initial_content {
+    margin-top: 8em;
+}
+
+.initial_title {
+    display: inline;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 2em;
+    border-bottom: 2px solid var(--white);
+} 
+
+.initial_desc {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 1em;
+}
+
+.initial_button {
+    padding: 12px 38px;
+    background-color: var(--mostarda);
+    border-radius: 4px;
+    box-shadow: 3px 6px 5px 0px var(--black);
+    margin-top: 5em;
+}
+
+.initial_button > a {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-family: 'Noticia Text', serif;
+    font-weight: 700;
+    color: var(--dark-grey);
+    cursor: pointer;
+}
+
+.initial_socialmedias {
+    display: none;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.initial_socialmedias > svg {
+    color: var(--white);
+    font-size: 2em;
+}
+/**/
+
+.services_container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 13%, 1) 100%);
+    padding: 1em;
+}
+
+.services_table {
+    width: 90%;
+    background-color: var(--mostarda);
+    border-radius: 12px;
+}
+
+.services_table_title {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+    color: var(--dark-grey);
+    border-bottom: 2px dashed var(--dark-grey);
+    font-size: 1.8em;
+}
+
+.services_table_columns {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+#teste {
+    border-right: none;
+    border-bottom: 1px dashed var(--dark-grey);
+    padding-bottom: 2em;
+}
+
+.services_table_column {
+    width: 100%;
+}
+
+.services_table_column > h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-grey);
+    padding: 20px;
+    font-size: 1.6em;
+}
+
+.services_table_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services_table_list > ul {
+    list-style: none;
+}
+
+.services_table_list > ul li {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 1em;
+    color: var(--dark-grey);
+    font-weight: 700;
+}
+
+.services_table_price {
+    border-bottom: 2px solid var(--dark-grey);
+}
+
+@media (min-width: 1200px) {
+    .initial_title {
+        font-size: 2.5em;
+    } 
+    .initial_desc {
+        font-size: 1.5em;
+    }
+    .initial_button {
+        padding: 12px 45px;
+    }
+    .initial_button > a {
+        font-size: 1.3em;
+    }
+
+    .services_container {
+        padding: 10em;
+    }
+    
+    .services_table_title {
+        padding: 30px;
+        font-size: 2em;
+    }
+    
+    .services_table_columns {
+        flex-direction: row;
+        padding: 50px 0px;
+    }
+    
+    .services_table_column > h1 {
+        padding: 30px;
+        font-size: 2em;
+    }
+    
+    .services_table_list > ul li {
+        font-size: 1.3em;
+        padding: 1em;
+    }
+
+    #teste {
+        border-bottom: none;
+        border-right: 1px dashed var(--dark-grey);
+        padding-bottom: 0em;
+    }
+}
