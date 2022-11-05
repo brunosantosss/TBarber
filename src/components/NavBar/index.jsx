@@ -8,9 +8,16 @@ export default function NavBar() {
 	const [menu, setmenu] = useState(false)
     const menuState = () => setmenu(menu => !menu)
 
+	/*
+		github pages
+		<img src="../logo.jpg" className={styles.logo}/> 
+		
+		development
+		<img src="../../public/logo.jpg" className={styles.logo}/>
+	*/
 	return (
 		<header>
-			<img src="../../public/204.jpg" className={styles.logo}/>
+			<img src="logo.jpg" className={styles.logo}/> 
 			<div className={styles.menu}>
                 <span  className={styles.FiMenu} onClick={menuState}>
 					{ menu ? <IoMdClose /> : <FiMenu /> }
@@ -18,8 +25,7 @@ export default function NavBar() {
 
                 <ul className={menu ? styles.open : ''}>
                     <li><a href="#section_1">Serviços</a></li>
-                    <li><a href="/">Barbearia</a></li>
-                    <li><a href="/">Sobre nós</a></li>
+                    <li><a href="#section_2">Sobre nós</a></li>
                 </ul>
             </div>
 		</header>

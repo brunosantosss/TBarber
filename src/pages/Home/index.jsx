@@ -15,12 +15,6 @@ export default function Home() {
 					</button>
 				</div>
 
-				<div className={styles.initial_socialmedias}>
-					<SiInstagram />
-					<SiWhatsapp />
-					<SiFacebook />
-				</div>
-
 			</section>
 
 			<section id='section_1' className={styles.services_container}>
@@ -58,6 +52,24 @@ export default function Home() {
 								</ul>
 							</div>
 						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id='section_2' className={styles.about_container}>
+				<div className={styles.about_part1}>
+					<img src="https://www.google.com/maps/vt/data=yasgyZ-M3PGlnAkXWki2Lh95Kb4SGlLcX-jD2zlElEoSmvqduAveazmy2p6ac-TauZw2iPUoawUKHsSlDzp16aXmyN6VelLAQem0uFawiz14StDqbOmC6mS7NrDhA8OqoUJrTjG_5f4Dd_vCz4IutJSKu9yKXAwPn8Wm5iyhfjKuLv_YboQqkx2_uHi6IoOEwoxKJBx6-UB9Iyr9cQtW2_0s7KpW0SvoAEszi15ATs0nk57DbFriEevtUludIH-M9rdK52sG"/>
+
+					<p>Rua: Canuto de Aguiar</p>
+					<p>Cidade / Bairro: Fortaleza - Meireles</p>
+				</div>
+				<div className={styles.about_part2}>
+					<p>Local para colocar o texto sobre nós de sua barbearia. Local para colocar o texto sobre nós de sua barbearia. Local para colocar o texto sobre nós de sua barbearia.</p>
+					
+					<div className={styles.about_icons}>
+						<SiFacebook />
+						<SiInstagram />
+						<SiWhatsapp />
 					</div>
 				</div>
 			</section>
